@@ -20,7 +20,6 @@ exports.updateTodo=async(req,res)=>{
                 message:'Updated successfully'
             }
         )
-
     }
     catch(err){
         console.error(err);

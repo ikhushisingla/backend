@@ -2,12 +2,12 @@ const mongoose=require("mongoose")
 
 const todoSchema=new mongoose.Schema(
     {
-        Name:{
+        name:{
             type:String,
             required:true,
             maxLength:30,
         },
-        RollNumber:{
+        rollNo:{
             type:Number,
             required:true,
             maxLength:20,
@@ -25,4 +25,4 @@ const todoSchema=new mongoose.Schema(
     }
 )
 
-module.exports=mongoose.models("Todo",todoSchema)
+module.exports=mongoose.model("Todo",todoSchema)

@@ -6,7 +6,7 @@ const Todo=require("../models/Todo")
 exports.deleteTodo=async(req,res)=>{
     try{
         const {id}=req.params
-        await Todo.findAndDeleteById(id)
+        await Todo.findByIdAndDelete(id)
         res.json(
             {
                 success:true,
